@@ -112,6 +112,17 @@ a:hover{
 	color: red;
 }
 
+#nav a{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#nav a:hover{
+	color: blue;
+	background-color: white;
+}
+
 .subtitle a{
 	color: blue;
 	font-size: 18px;
@@ -133,15 +144,4 @@ a:hover{
 #main li{
 	list-style-type: disc;
 	margin-left: 10px;
-}
-
-#nav a{
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-#nav a:hover{
-	color: blue;
-	background-color: white;
 }
