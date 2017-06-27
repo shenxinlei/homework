@@ -1,5 +1,5 @@
 #container{
-	height: 900px;
+	height: 1000px;
 	background: #E0E0E0;
 	padding: 5px 0px;
 }
@@ -14,26 +14,16 @@
 	padding: 4px;
 }
 
-li{
-	font-size: 18px;
-}
-
-#nav li{
-	margin: 20px;
-	width: 100px;
-	float: left;
-}
-
 #lside{
-	width: 250px;
+	width: 220px;
 	background-color: #AAAAFF;
-	margin: 5px 5px 5px 150px;
+	margin: 5px 0px 5px 150px;
 	float: left;
 }
 
 #user{
-	width: 220px;
-	height: 200px;
+	width: 200px;
+	height: 150px;
 	background-color: #E6CAFF;
 	margin: 5px auto;
 	border: 1px dotted;
@@ -41,7 +31,7 @@ li{
 }
 
 #weather{
-	width: 220px;
+	width: 200px;
 	height: 100px;
 	background-color: #E6CAFF;
 	margin: 5px auto;
@@ -50,7 +40,7 @@ li{
 }
 
 #link1{
-	width: 220px;
+	width: 200px;
 	height: 300px;
 	background-color: #E6CAFF;
 	margin: 5px auto;
@@ -59,31 +49,99 @@ li{
 }
 
 #rside{
-	width: 770px;
-	background-color: #AAAAFF;
-	margin: 5px 150px 5px 5px;
+	width: 820px;
+	/*background-color: #AAAAFF;*/
+	margin: 5px 150px 5px 0px;
 	float: right;
 }
 
 #dynamic{
-	width: 750px;
+	width: 800px;
 	height: 150px;
-	background-color: #E6CAFF;
-	margin: 5px auto;
+	background-color: #AAAAFF;
+	margin: 0px auto;
+	border: 5px double #CA8EFF;
+	padding: 5px;
 }
 
-.link2{
-	width: 365px;
-	height: 200px;
-	background-color: #E6CAFF;
+#lstatic{
+	width: 600px;
+	background-color: #AAAAFF;
 	margin: 5px;
-	border: 1px dotted;
-	padding: 4px;
 	float: left;
 }
 
+.link2{
+	width: 580px;
+	height: 200px;
+	background-color: #E6CAFF;
+	margin: 5px auto;
+	border: 1px dotted;
+	padding: 4px;
+}
+
+#rstatic{
+	width: 200px;
+	background-color: #AAAAFF;
+	margin: 5px;
+	float: right;
+}
+
+.link3{
+	width: 180px;
+	height: 300px;
+	background-color: #E6CAFF;
+	margin: 5px auto;
+	border: 1px dotted;
+	padding: 4px;
+}
+
 .subtitle{
-	height: 30px;
+	height: 25px;
 	font-size: 18px;
 	background-color: #CA8EFF;
+	background-image: url(subtitle.jpg);
+}
+
+a{
+	color: black;
+	font-size: 15px;
+}
+
+a:hover{
+	color: red;
+}
+
+.subtitle a{
+	color: blue;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.subtitle a:hover{
+	color: orange;
+}
+
+#nav li{
+	width: 150px;
+	background-color: blue;
+	background-image: url(nav.jpg);
+	margin: 25px 1px;
+	float: left;
+}
+
+#main li{
+	list-style-type: disc;
+	margin-left: 10px;
+}
+
+#nav a{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#nav a:hover{
+	color: blue;
+	background-color: white;
 }
