@@ -1,6 +1,8 @@
 #container{
+	width: 1060px;
 	height: 1000px;
 	background: #E0E0E0;
+	margin: 0px auto;
 	padding: 5px 0px;
 }
 
@@ -17,7 +19,7 @@
 #lside{
 	width: 220px;
 	background-color: #AAAAFF;
-	margin: 5px 0px 5px 150px;
+	margin: 5px 0px 5px 5px;
 	float: left;
 }
 
@@ -51,7 +53,7 @@
 #rside{
 	width: 820px;
 	/*background-color: #AAAAFF;*/
-	margin: 5px 150px 5px 0px;
+	margin: 5px 5px 5px 0px;
 	float: right;
 }
 
