@@ -1,5 +1,5 @@
 #container{
-	width: 1060px;
+	width: 1080px;
 	height: 1000px;
 	background: #E0E0E0;
 	margin: 0px auto;
@@ -19,7 +19,7 @@
 #lside{
 	width: 220px;
 	background-color: #AAAAFF;
-	margin: 5px 0px 5px 5px;
+	margin: 5px 0px 5px 15px;
 	float: left;
 }
 
@@ -53,7 +53,7 @@
 #rside{
 	width: 820px;
 	/*background-color: #AAAAFF;*/
-	margin: 5px 5px 5px 0px;
+	margin: 5px 15px 5px 0px;
 	float: right;
 }
 
@@ -105,6 +105,8 @@
 	background-image: url(subtitle.jpg);
 }
 
+/*链接默认为黑色15px
+鼠标悬停变红色*/
 a{
 	color: black;
 	font-size: 15px;
@@ -114,37 +116,66 @@ a:hover{
 	color: red;
 }
 
+/*导航条的链接默认为图底白字20px 子导航隐藏
+鼠标悬停变白底蓝字加粗 子导航出现*/
+/*注释*/
+#nav li{
+	/*width: 150px;*/
+	background-color: blue;
+	background-image: url(nav.jpg);
+	margin: 25px 1px 0px 0px;
+	float: left;
+	position: relative;
+}
+
 #nav a{
 	color: white;
 	font-size: 20px;
+	display: block;
+	width: 150px;
+	text-align: center;
+}
+
+#nav .subnav{
+	display: none;
+}
+
+#nav li:hover a{
+	color: blue;
+	background-color: white;
 	font-weight: bold;
 }
 
-#nav a:hover{
+#nav li:hover .subnav{
+	display:inline;
+	/*width: 200px;*/
+	position: absolute;
+	left: 0px;
+	top: 30px;
 	color: blue;
 	background-color: white;
+	font-size: 15px;
+	border: 2px dotted #E6CAFF;
 }
 
+/*子标题的链接默认为蓝色18px
+鼠标悬停变橙色下划线加粗*/
 .subtitle a{
 	color: blue;
 	font-size: 18px;
-	font-weight: bold;
 }
 
 .subtitle a:hover{
 	color: orange;
 	text-decoration: underline;
-}
-
-#nav li{
-	width: 150px;
-	background-color: blue;
-	background-image: url(nav.jpg);
-	margin: 25px 1px;
-	float: left;
+	font-weight: bold;
 }
 
 #main li{
 	list-style-type: disc;
 	list-style-position: inside;
+}
+
+#user input{
+	background-color: silver;
 }
