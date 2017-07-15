@@ -17,15 +17,15 @@
 				</li>
 				<li>
 					<a href="#">我们公司</a>
-					<span class="subnav">
-						<a href="#">公司概况</a>
-						<a href="#">新闻与信息</a>
-						<a href="#">人力资源</a>
-						<a href="#">企业管理</a>
-						<a href="#">财务园地</a>
-						<a href="#">党群工作</a>
-						<a href="#">内审园地</a>
-					</span>
+					<ul class="subnav">
+						<li><a href="#">公司概况</a></li>
+						<li><a href="#">新闻与信息</a></li>
+						<li><a href="#">人力资源</a></li>
+						<li><a href="#">企业管理</a></li>
+						<li><a href="#">财务园地</a></li>
+						<li><a href="#">党群工作</a></li>
+						<li><a href="#">内审园地</a></li>
+					</ul>
 				</li>
 				<li>
 					<a href="#">我的团队</a>
@@ -45,11 +45,20 @@
 			<div id="lside">
 				<div id="user">
 					<div class="subtitle">用户登录</div>
-					<form action="login.html">
-						<br /><br />
-						用户名：<input type="text" size="15" maxlength="20"><br />
-						密码：<input type="password" size="15" maxlength="30"><br /><br />
-						<input type="submit" title="登录" value="登录">
+					<form action="index.html" method="post">
+						</br>
+						<p>
+							用户名：<input type="text" name="username" size="15">
+						</p>
+						</br>
+						<p>
+							密码：<input type="password" name="password" size="15">
+						</p>
+						</br>
+						<p>
+							<input type="submit" value="登录">
+							<input type="button" value="忘记密码">
+						</p>
 					</form>
 				</div>
 				<div id="weather">
@@ -89,6 +98,7 @@
 					<div class="link2">
 						<div class="subtitle">
 							<a href="#">每日情况</a>
+							<a href="#">公司新闻</a>
 						</div>
 						<ul id="diary">
 							<li><a href="#">每日1</a></li>
@@ -103,6 +113,7 @@
 					<div class="link3">
 						<div class="subtitle">
 							<a href="#">上海移动报</a>
+							<a href="#">移动之窗</a>
 						</div>
 						<ul id="cmccnews">
 							<li><a href="#">报纸1</a></li>
@@ -115,6 +126,7 @@
 					<div class="link3">
 						<div class="subtitle">
 							<a href="#">人力资源公告</a>
+							<a href="#">财务公告</a>
 						</div>
 						<ul id="hrnotic">
 							<li><a href="#">人力1</a></li>
@@ -126,7 +138,9 @@
 					</div>
 				</div>
 			</div>
+			<div class="clr"></div>
 		</div>
+		<div id="footer"></div>
 	</div>
 </body>
 </html>

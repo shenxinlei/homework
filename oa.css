@@ -43,7 +43,7 @@
 
 #link1{
 	width: 200px;
-	height: 300px;
+	height: 400px;
 	background-color: #E6CAFF;
 	margin: 5px auto;
 	border: 1px dotted;
@@ -52,7 +52,6 @@
 
 #rside{
 	width: 820px;
-	/*background-color: #AAAAFF;*/
 	margin: 5px 15px 5px 0px;
 	float: right;
 }
@@ -100,7 +99,6 @@
 
 .subtitle{
 	height: 25px;
-	font-size: 18px;
 	background-color: #CA8EFF;
 	background-image: url(subtitle.jpg);
 }
@@ -110,17 +108,16 @@
 a{
 	color: black;
 	font-size: 15px;
+	line-height: 30px;
 }
 
 a:hover{
 	color: red;
 }
 
-/*导航条的链接默认为图底白字20px 子导航隐藏
-鼠标悬停变白底蓝字加粗 子导航出现*/
-/*注释*/
+/*导航条的链接默认为图底白字18px 二级导航隐藏
+鼠标悬停变白底蓝字加粗 二级导航出现*/
 #nav li{
-	/*width: 150px;*/
 	background-color: blue;
 	background-image: url(nav.jpg);
 	margin: 25px 1px 0px 0px;
@@ -129,10 +126,11 @@ a:hover{
 }
 
 #nav a{
-	color: white;
-	font-size: 20px;
 	display: block;
 	width: 150px;
+	color: white;
+	font-size: 18px;
+	line-height: 32px;
 	text-align: center;
 }
 
@@ -141,32 +139,48 @@ a:hover{
 }
 
 #nav li:hover a{
-	color: blue;
 	background-color: white;
+	color: blue;
 	font-weight: bold;
 }
 
 #nav li:hover .subnav{
-	display:inline;
-	/*width: 200px;*/
+	display: block;
+	background-color: white;
+	color: blue;
+	font-size: 15px;
+	line-height: 20px;
+	border: 2px dotted #E6CAFF;
 	position: absolute;
 	left: 0px;
-	top: 30px;
-	color: blue;
-	background-color: white;
-	font-size: 15px;
-	border: 2px dotted #E6CAFF;
+	top: 32px;
 }
 
-/*子标题的链接默认为蓝色18px
-鼠标悬停变橙色下划线加粗*/
-.subtitle a{
+#nav li:hover .subnav li{
+	margin-top: 5px;
+}
+
+#nav li:hover .subnav a{
+	display: block;
+	background-color: white;
 	color: blue;
-	font-size: 18px;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: normal;
+	border-bottom: 1px dotted #E6CAFF;
+}
+
+/*模块标题的链接默认为蓝色16px
+鼠标悬停变橙色下划线加粗*/
+.subtitle,.subtitle a{
+	color: blue;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 .subtitle a:hover{
 	color: orange;
+	background-image: url(subtitlebg.gif);
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -174,8 +188,25 @@ a:hover{
 #main li{
 	list-style-type: disc;
 	list-style-position: inside;
+	margin-left: 10px;
 }
 
-#user input{
+/*#user input{
 	background-color: silver;
+}*/
+
+.clr{
+	clear: both;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+#footer{
+	width: 1030px;
+	height: 50px;
+	background-color: #E6CAFF;
+	margin: 5px auto;
+	border: 1px dotted;
+	padding: 4px;
 }
